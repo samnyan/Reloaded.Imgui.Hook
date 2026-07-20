@@ -59,10 +59,10 @@ namespace Reloaded.Imgui.Hook.DirectX.Hooks
         
         [Function(Reloaded.Hooks.Definitions.X64.CallingConventions.Microsoft)]
         [Reloaded.Hooks.Definitions.X86.Function(CallingConventions.Stdcall)]
-        public struct Present { public FuncPtr<IntPtr, int, PresentFlags, IntPtr> Value; }
+        public struct Present { public FuncPtr<IntPtr, int, PresentFlags, int> Value; }
         
         [Function(Reloaded.Hooks.Definitions.X64.CallingConventions.Microsoft)]
         [Reloaded.Hooks.Definitions.X86.Function(CallingConventions.Stdcall)]
-        public struct ResizeBuffers { public FuncPtr<IntPtr, uint, uint, uint, Format, uint, IntPtr> Value; }
+        public struct ResizeBuffers { public FuncPtr<IntPtr, uint, uint, uint, Format, uint, int> Value; }
     }
 }
